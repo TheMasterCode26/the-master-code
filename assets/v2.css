@@ -357,3 +357,7 @@ nosotros ===== */
   .bt.games,.bt.academy{min-height:300px}
 }
 @media(max-width:700px){.bt-shots{right:-84px;bottom:-80px}.bt.games .bt-txt{max-width:56%}}
+
+/* galería de capturas: el atributo width del HTML no debe deformar la proporción 9:16 */
+.shots img,.v2shots img{width:auto;height:min(620px,76svh);aspect-ratio:9/16;object-fit:cover}
+html{scroll-padding-top:170px}
