@@ -1,0 +1,75 @@
+/* Niko (extraído de Codemy style.css) */
+/* NIKO REAL 3D (PNG SIN RECUADRO) + FX 2D CÓMIC + 10 REACCIONES */
+.codemy-cat.niko-real {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.codemy-cat.niko-real .niko-shadow {
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  bottom: 2%;
+  height: 10%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(22, 20, 74, 0.35) 0%, transparent 72%);
+  pointer-events: none;
+}
+.codemy-cat.niko-real .niko-real-body { width: 100%; height: 100%; display: grid; place-items: center; }
+.codemy-cat.niko-real .niko-real-img {
+  width: 92%;
+  height: 92%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 12px rgba(22, 20, 74, 0.28));
+  transition: transform 0.28s ease, filter 0.25s ease;
+}
+.codemy-cat.niko-real.dir-left .niko-real-img { transform: scaleX(-1); }
+.codemy-cat.niko-real.l-triste .niko-real-img { filter: saturate(0.82) brightness(0.92) drop-shadow(0 6px 12px rgba(22, 20, 74, 0.28)); }
+.codemy-cat.niko-real.l-inspirado .niko-real-img,
+.codemy-cat.niko-real.l-ganaste .niko-real-img { filter: brightness(1.05) drop-shadow(0 6px 16px rgba(56, 189, 248, 0.45)); }
+.codemy-cat.niko-real .niko-fx-svg {
+  position: absolute;
+  inset: -6%;
+  width: 112%;
+  height: 112%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 3;
+}
+.codemy-cat.niko-real .niko-gear-svg {
+  position: absolute;
+  inset: 4%;
+  width: 92%;
+  height: 92%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.codemy-cat .cat-head { transform-origin: 50% 60%; animation: cat-breathe 3.2s ease-in-out infinite; }
+.codemy-cat .niko-paw-wave { transform-origin: 75% 80%; animation: niko-wave 0.75s ease-in-out infinite; }
+.codemy-cat .comic-fx-2d { animation: fx-pop-2d 0.45s cubic-bezier(0.3, 1.6, 0.4, 1) both; }
+.codemy-cat.l-pensando .cat-head { animation: cat-think 2.4s ease-in-out infinite; }
+.codemy-cat.l-ganaste .cat-head, .codemy-cat.l-feliz .cat-head { animation: cat-bounce 0.8s cubic-bezier(.25,1.6,.45,1) 2; }
+.codemy-cat.l-triste .cat-head { animation: cat-oops 0.65s ease-in-out 1; }
+.codemy-cat.l-saludo .cat-head { animation: cat-bounce 1.1s ease-in-out 1; }
+.codemy-cat.l-sorpresa .cat-head, .codemy-cat.l-inspirado .cat-head { animation: niko-pop-up 0.5s cubic-bezier(0.25, 1.6, 0.45, 1) both; }
+.codemy-cat.l-cool .cat-head { animation: niko-cool 2.8s ease-in-out infinite; }
+.codemy-cat.l-enojado .cat-head { animation: niko-shake 0.35s ease-in-out 2; }
+.codemy-cat.l-durmiendo .cat-head { animation: niko-sleep 3.6s ease-in-out infinite; }
+
+@keyframes cat-breathe { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-2.5px) scale(1.01,0.99); } }
+@keyframes cat-think { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(-8deg) translateY(-2px); } }
+@keyframes cat-bounce { 0%, 100% { transform: translateY(0) scale(1.05,0.95); } 40% { transform: translateY(-10px) scale(0.96,1.04); } }
+@keyframes cat-oops { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px) rotate(-3deg); } 60% { transform: translateX(4px) rotate(3deg); } }
+@keyframes niko-wave { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(12deg) translateY(-2px); } }
+@keyframes fx-pop-2d { from { opacity: 0.9; transform: scale(0.88) rotate(-3deg); } to { opacity: 1; transform: scale(1) rotate(0deg); } }
+@keyframes niko-pop-up { 0% { transform: scale(0.92) translateY(4px); } 55% { transform: scale(1.06) translateY(-6px); } 100% { transform: scale(1) translateY(0); } }
+@keyframes niko-cool { 0%, 100% { transform: rotate(2deg); } 50% { transform: rotate(-3deg) translateY(-2px); } }
+@keyframes niko-shake { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-3px); } 70% { transform: translateX(3px); } }
+@keyframes niko-sleep { 0%, 100% { transform: translateY(1px) rotate(2deg); } 50% { transform: translateY(4px) rotate(4deg) scaleY(0.98); } }
+
+.codemy-cat.niko-real{cursor:default}
