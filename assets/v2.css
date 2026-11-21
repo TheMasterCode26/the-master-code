@@ -376,3 +376,14 @@ html{scroll-padding-top:170px}
   .lk2-bubble{top:-62px;white-space:nowrap;max-width:calc(100vw - 48px);width:auto;font-size:.95rem}
 }
 @media(max-width:380px){.lk2-bubble{white-space:normal;text-align:center;width:max-content}}
+
+/* ===== Rusty Orbit ===== */
+.badge.soon{background:rgba(249,115,22,.18);border:1px solid rgba(249,115,22,.55);color:#ffd7b8}
+.badge.soon i{background:#F97316;box-shadow:0 0 10px #F97316}
+.rusty-logo{display:block;width:min(560px,86%);height:auto;margin:0 0 6px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.45))}
+.copy h1.t-rusty,.copy h2.t-rusty{font-size:0;line-height:0;margin-bottom:22px}
+.art.cutout{align-items:flex-end;justify-content:center}
+.ro-kairon{height:min(78%,560px);width:auto;max-height:100%;object-fit:contain;filter:drop-shadow(0 24px 40px rgba(0,0,0,.55));animation:float 7s ease-in-out infinite}
+.hero.static.tall .art.cutout{height:min(70svh,640px)}
+.worlds img{height:auto;width:min(620px,84vw);aspect-ratio:16/9;object-fit:cover;border-radius:26px;flex:none}
+@media(max-width:900px){.ro-kairon{height:340px}.art.cutout{height:360px}.rusty-logo{width:min(420px,90%)}}
