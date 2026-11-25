@@ -130,10 +130,10 @@ footer{background:#070f1a;padding:72px 0 28px;border-top:1px solid var(--line)}
 
 @media(max-width:900px){
   .burger{display:flex}
-  nav#nav{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:stretch;background:#0a1423;padding:12px 20px 24px;max-height:0;overflow:hidden;visibility:hidden;transition:.25s;gap:0}
-  nav#nav.open{max-height:80svh;visibility:visible;overflow:auto;border-bottom:1px solid var(--line)}
+  nav#nav{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:stretch;background:#0a1423;padding:0 20px;max-height:0;overflow:hidden;visibility:hidden;transition:.25s;gap:0}
+  nav#nav.open{max-height:80svh;padding:12px 20px 24px;visibility:visible;overflow:auto;border-bottom:1px solid var(--line)}
   nav .top{padding:14px 6px;border-radius:0;border-bottom:1px solid var(--line)}
-  .menu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:none;padding:0 0 8px 6px}
+  .menu{position:static;opacity:1;visibility:inherit;transform:none;box-shadow:none;border:0;background:none;padding:0 0 8px 6px}
   .hero-in{grid-template-columns:1fr;padding-top:100px;padding-bottom:120px;text-align:left}
   .art{height:360px;order:2}.hero{min-height:auto}.hero.static,.hero.static.tall{min-height:auto}
   .hero:not(.static) .slide{position:absolute}.hero:not(.static){min-height:880px}

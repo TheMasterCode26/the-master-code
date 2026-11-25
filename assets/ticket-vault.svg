@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <pattern id="linoLight" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#1C1917" stroke-width="1" stroke-opacity="0.06" />
+    </pattern>
+    <radialGradient id="amberLightGrad" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#C25E0C" />
+      <stop offset="100%" stop-color="#92400E" />
+    </radialGradient>
+    <mask id="hollowTVLight">
+      <rect width="1024" height="1024" fill="white" />
+      <text
+        x="356"
+        y="498"
+        font-family="Baskerville, Georgia, serif"
+        font-style="italic"
+        font-weight="700"
+        font-size="258"
+        fill="black"
+      >T</text>
+      <text
+        x="454"
+        y="686"
+        font-family="Baskerville, Georgia, serif"
+        font-style="italic"
+        font-weight="700"
+        font-size="258"
+        fill="black"
+      >V</text>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="#FAF7F2" />
+  <rect width="1024" height="1024" fill="url(#linoLight)" />
+  <path
+    d="M288,242 L332,212 L376,242 L420,212 L464,242 L512,212 L560,242 L604,212 L648,242 L692,212 L736,242 L736,782 L692,812 L648,782 L604,812 L560,782 L512,812 L464,782 L420,812 L376,782 L332,812 L288,782 Z"
+    fill="url(#amberLightGrad)"
+    mask="url(#hollowTVLight)"
+  />
+</svg>

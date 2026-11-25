@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://themastercode26.github.io/the-master-code/sitemap.xml
