@@ -407,3 +407,47 @@ html{scroll-padding-top:170px}
 .hero.static.tall .art.cutout{height:min(70svh,640px)}
 .worlds img{height:auto;width:min(620px,84vw);aspect-ratio:16/9;object-fit:cover;border-radius:26px;flex:none}
 @media(max-width:900px){.ro-kairon{height:340px}.art.cutout{height:360px}.rusty-logo{width:min(420px,90%)}}
+
+/* ===== apps del Lab: Bamboo QR, Ticket Vault y Lana Clara ===== */
+/* proporción de pantalla propia de cada app */
+.phone{aspect-ratio:var(--ratio,9/16)}
+.shots.v2shots img{aspect-ratio:var(--ratio,9/16)}
+/* fondo claro con los colores de la app */
+.v2light[style]{background:var(--lbg);color:var(--link)}
+.v2light[style] .big{color:var(--link)}
+.v2light[style] p{color:var(--lmut)!important}
+.v2light[style] .eyebrow{color:var(--lacc)}.v2light[style] .eyebrow::before{background:var(--lacc)}
+.v2light[style] .fb.c2{background:var(--link);color:#fff}
+.v2light[style] .fb.c2 b{color:var(--acc)}
+.v2light[style] .fb.c3,.v2light[style] .fb.c6{border-color:color-mix(in srgb,var(--lacc) 22%,#fff)}
+.fb b{overflow-wrap:anywhere}
+.v2light[style] .fb b{font-size:clamp(2rem,3.4vw,2.9rem)}
+/* banner oficial de la tienda */
+.bannersec{padding:80px 0;background:linear-gradient(180deg,var(--bg2),#0a1322)}
+.appbanner{display:block;width:100%;height:auto;max-width:1100px;margin:0 auto;border-radius:34px;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 90px rgba(0,0,0,.5),0 0 0 6px rgba(255,255,255,.04)}
+/* títulos originales */
+.copy h1.t-bamboo,.copy h2.t-bamboo{font-family:'Chakra Petch',Sora,sans-serif;font-weight:700;letter-spacing:-.02em;color:#fff}
+.t-bamboo .sq{display:inline-block;width:.16em;height:.16em;margin-left:.12em;border-radius:.025em;background:#3CE8B5}
+.copy h1.t-ticket,.copy h2.t-ticket{font-family:Baskerville,'Libre Baskerville','Source Serif 4',Georgia,serif;font-style:italic;font-weight:700;letter-spacing:-.02em;line-height:.92;color:#F7F3EC}
+.t-ticket span{display:block}.t-ticket .l2{padding-left:.42em}
+.t-ticket i{color:#F28A24;font-style:italic}
+.copy h1.t-lana,.copy h2.t-lana{font-family:Sora,sans-serif;font-weight:800;letter-spacing:-.045em;color:#fff}
+.t-lana .m{color:#A7F3D0}
+/* bloque del Lab en la home */
+/* el abanico de íconos del Lab ahora lleva cuatro apps */
+.bt-icons img{width:48px;height:48px;border-radius:13px}
+.bt-icons img:nth-child(1){transform:rotate(-11deg) translateY(5px)}.bt-icons img:nth-child(2){transform:rotate(-4deg)}
+.bt-icons img:nth-child(3){margin-left:-16px;transform:rotate(4deg);z-index:3}.bt-icons img:nth-child(4){margin-left:-16px;transform:rotate(11deg) translateY(5px);z-index:4}
+.bt.lab:hover .bt-icons img:nth-child(3){transform:rotate(4deg) translateY(-6px)}.bt.lab:hover .bt-icons img:nth-child(4){transform:rotate(15deg) translate(4px,2px)}
+.bt.lab h3{max-width:62%}
+@media(max-width:700px){.bannersec{padding:48px 0}.appbanner{border-radius:18px}.bt-icons img{width:50px;height:50px}.bt.lab .bt-txt{max-width:56%}}
+/* palabras largas en las tarjetas de datos: más chicas, sin partirse */
+.fb b{overflow-wrap:normal}
+.v2light[style] .fb b{font-size:clamp(1.7rem,2.6vw,2.4rem)}
+@media(max-width:700px){.t-ticket .l2{padding-left:.3em}}
+/* Lab en la home: cuatro íconos sin apretar el título */
+.bt.lab h3{max-width:none}
+.bt-icons{right:14px;bottom:14px}
+.bt-icons img{width:36px;height:36px;border-radius:10px}
+.bt-icons img:nth-child(n+2){margin-left:-9px}
+@media(max-width:1000px){.bt-icons img{width:42px;height:42px}}
