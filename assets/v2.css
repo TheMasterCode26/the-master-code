@@ -451,3 +451,6 @@ html{scroll-padding-top:170px}
 .bt-icons img{width:36px;height:36px;border-radius:10px}
 .bt-icons img:nth-child(n+2){margin-left:-9px}
 @media(max-width:1000px){.bt-icons img{width:42px;height:42px}}
+/* capturas horizontales (Rusty Orbit): conservan 16:9; la regla de proporción vertical no aplica aquí */
+.shots.v2shots.land img{aspect-ratio:16/9;width:min(760px,86vw);height:auto;object-fit:cover;border-radius:22px}
+.shots.v2shots.worlds img{aspect-ratio:16/9;width:min(620px,84vw);height:auto;object-fit:cover}
